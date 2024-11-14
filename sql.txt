@@ -1,0 +1,15 @@
+drop database if exists `quanlynhanvien`;
+create database `quanlynhanvien`;
+
+use `quanlynhanvien`;
+
+create table `nhan_vien` (
+	`id_nhan_vien` INT NOT NULL AUTO_INCREMENT,
+    `ma_nhan_vien` CHAR(10) NOT NULL,
+    `ten_nhan_vien` VARCHAR(100),
+    `ngay_sinh` DATE,
+    `sdt` CHAR(10),
+    `email` VARCHAR(100),
+    `status_id` TINYINT(1),
+    PRIMARY KEY (`id_nhan_vien`)
+);
